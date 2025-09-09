@@ -29,16 +29,3 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer){
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
-
-// dark mode toggle
-const toogleBtn = document.getElementById('dark-mode-toggle');
-toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-
-    //ganti ikon sesuai mode
-    if (document.body.classList.contains('dark')) {
-        toggleBtn.textContent = "☀️";
-    } else {
-        toggleBtn.textContent = "🌙";
-    }
-});
