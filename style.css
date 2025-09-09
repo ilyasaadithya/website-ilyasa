@@ -129,36 +129,3 @@ html{
     opacity: 1;
     transform: translateY(0);
 }
-
-.dark-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 20px;
-    transition: transform 0.2s;
-}
-
-.dark-toggle:hover {
-    transform: scale(1.2);
-}
-
-/* Mode gelap */
-body.dark {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-}
-
-body.dark .navbar.navbar.scrolled {
-    background: #111;
-}
-
-body.dark .hero {
-    background: #000;
-}
-
-body.dark .portofolio .card {
-    background: #2a2a2a;
-    box-shadow: 0 4px 10px rgba(255,255,255,0.05);
-}
