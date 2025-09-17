@@ -42,35 +42,44 @@
         <h2>Work Experiences</h2>
         <div class="pengalaman-grid">
         
-        <div class="card">
+        <div class="card" onclick="openmodal('dapursolo')">
             <h3> PT Dapur Solo Mustika Nusantara </h3>
             <p><strong> Barista </strong> – Provided service and supported restaurant operations.</p>
         </div>    
 
-        <div class="card">
+        <div class="card" onclick="openmodal('kao')">
             <h3> PT Kao Indonesia </h3>
             <p><strong>Member Handling (Robot Support)</strong> – Supported robot operators in the production line.</p>
         </div>
         
-        <div class="card">
+        <div class="card" onclick="openmodal('hokben')">
             <h3> PT Eka Bogainti (Hokben) </h3>
             <p><strong> Store Crew </strong> – Assisted customers and handled operations. </p>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="openmodal('yamahamusic')">
             <h3> PT Yamaha Music Mfg Asia </h3>
             <p><strong>Woodworking Machine Operator</strong> – Operated manual moulder and 6-axis moulder to shape MDF into digital piano parts.</p>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="openmodal('indomaret')">
             <h3> PT Indomarco Prismatama </h3>
             <p><strong> Store Crew </strong>  – Managed stock, handled transactions. </p>
         </div>
         
-        <div class="card">
+        <div class="card" onclick="openmodal('yamahamotor')">
             <h3> PT Yamaha Indonesia Motor </h3>
             <p><strong>Production Operator (Packing CKD)</strong> – Packed motorcycle parts for export.</p>
         </div>
+
+    <!-- html modal untuk openmodal -->
+     <div id="pengalamanmodal" class="modal">
+        <div class="modal-content"> 
+            <span class="close" onclick="closemodal()">&times;</span>
+            <div id="modalbody"></div>
+        </div>
+     </div>
+
     </div>
     </section>
 
@@ -87,4 +96,22 @@
 <!--linking ke jss-->
 <script src="script.js"></script>
 </body>
+<script>
+    function openmodal(pengalaman){
+        let details = {
+            "dapursolo" : "<h2>PT Dapur Solo Mustika Nusantara</h2>",
+            "kao" : "<h2>PT Kao Indonesia</h2>",
+            "hokben" : "<h2>PT Eka Bogainti</h2>",
+            "yamahamusic" : "<h2>PT Yamaha Music Manufacturing Asia</h2>",
+            "indomaret" : "<h2>PT Indomarco Prismatama</h2>",
+            "yamahamotor" : "<h2>PT Yamaha Motor Indonesia Manufacturing</h2>"
+        };
+
+        document.getElementById("modalbody").innerHTML=details[pengalaman];
+        document.getElementById("pengalamanmodal").style.display="block";
+    }
+    function closemodal(){
+        document.getElementById("pengalamanmodal").style.display = "none";
+    }
+</script>
 </html>
