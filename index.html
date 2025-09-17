@@ -30,11 +30,11 @@
 
     <section id="about" class="about fade-in">
         <h2>About Me</h2>
-        <p>Hi, my name is Adithya Ilyasa. I am an Information Systems student at Universitas Terbuka with a background in
+        <p class="desc">Hi, my name is Adithya Ilyasa. I am an Information Systems student at Universitas Terbuka with a background in
     Computer and Network Engineering. I also have professional experience in manufacturing and service industry roles,
     including positions at PT Kao Indonesia, Yamaha Music, Yamaha Motor, and F&B companies such as HokBen, Indomaret,
     and Dapur Solo.</p>
-        <p>Currently, I am focusing on learning Java and MySQL for backend development, while also exploring Python for
+        <p class="desc">Currently, I am focusing on learning Java and MySQL for backend development, while also exploring Python for
     personal growth. I enjoy exploring new places, traveling, and continuously improving my skills.</p>
     </section>
 
@@ -42,84 +42,184 @@
         <h2>Work Experiences</h2>
         <div class="pengalaman-grid">
         
-        <div class="card" onclick="openmodal('dapursolo')">
-            <h3> PT Dapur Solo Mustika Nusantara </h3>
-            <p><strong> Barista </strong> – Provided service and supported restaurant operations.</p>
-        </div>    
-
-        <div class="card" onclick="openmodal('kao')">
-            <h3> PT Kao Indonesia </h3>
-            <p><strong>Member Handling (Robot Support)</strong> – Supported robot operators in the production line.</p>
-        </div>
-        
-        <div class="card" onclick="openmodal('hokben')">
-            <h3> PT Eka Bogainti (Hokben) </h3>
-            <p><strong> Store Crew </strong> – Assisted customers and handled operations. </p>
-        </div>
-
-        <div class="card" onclick="openmodal('yamahamusic')">
-            <h3> PT Yamaha Music Mfg Asia </h3>
-            <p><strong>Woodworking Machine Operator</strong> – Operated manual moulder and 6-axis moulder to shape MDF into digital piano parts.</p>
-        </div>
-
-        <div class="card" onclick="openmodal('indomaret')">
-            <h3> PT Indomarco Prismatama </h3>
-            <p><strong> Store Crew </strong>  – Managed stock, handled transactions. </p>
-        </div>
-        
-        <div class="card" onclick="openmodal('yamahamotor')">
-            <h3> PT Yamaha Indonesia Motor </h3>
-            <p><strong>Production Operator (Packing CKD)</strong> – Packed motorcycle parts for export.</p>
-        </div>
-
-    <!-- html modal untuk openmodal -->
-    <div id="pengalamanmodal" class="modal">
-        <div class="modal-content"> 
-            <span class="close" onclick="closemodal()">&times;</span>
-
     <!-- cards -->
     <div class="card" data-modal="modal1">
-        <h3>PT Dapursolo Mustika Nusantara</h3>
+        <h3>Dapursolo Mustika Nusantara</h3>
+        <p><strong> Barista </strong> – Provided service and supported restaurant operations.</p>
     </div>
     <div class="card" data-modal="modal2">
-        <h3>PT Kao Indonesia<h3>
+        <h3>PT Kao Indonesia</h3>
+        <p><strong>Member Handling (Robot Support)</strong> – Supported robot operators in the production line.</p>
     </div>
     <div class="card" data-modal="modal3">
         <h3>PT Eka Bogainti</h3>
+        <p><strong> Store Crew </strong> – Assisted customers and handled operations. </p>
     </div>
     <div class="card" data-modal="modal4">
         <h3>PT Yamaha Music Manufaturing Asia</h3>
+        <p><strong>Woodworking Machine Operator</strong> – Operated manual moulder and 6-axis moulder to shape MDF into digital piano parts.</p>
     </div>
     <div class="card" data-modal="modal5">
         <h3>PT Indomarco Prismatama</h3>
+        <p><strong> Store Crew </strong>  – Managed stock, handled transactions. </p>
     </div>
     <div class="card" data-modal="modal6">
-        <h3>PT Yamaha Indonesia Motor Manufacturing </h3>
+        <h3>PT Yamaha Indonesia Motor Manufacturing</h3>
+        <p><strong>Production Operator (Packing CKD)</strong> – Packed motorcycle parts for export.</p>
     </div>
 
     <!-- Modal -->
-    <div id="modal1" class="modal">
+        <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>PT Dapursolo Mustika Nusantara</h2>
-            <p>Deskripsi Perusahaan</p>
-            <p>Dapur Solo merupakan ............</p>
+            <h3>Deskripsi Perusahaan</h3>
+            <p class="desc">PT Dapur Solo Mustika Nusantara adalah perusahaan kuliner yang bergerak di bidang restoran 
+                dengan brand Dapur Solo, salah satu jaringan restoran khas masakan Jawa terbesar di Indonesia. 
+                Didirikan oleh Swan Kumarga sejak tahun 1988, perusahaan ini berkembang dari usaha katering rumahan 
+                menjadi jaringan restoran modern yang menghadirkan hidangan autentik Jawa, khususnya Solo, 
+                dengan cita rasa tradisional namun dikemas dalam konsep yang lebih praktis dan nyaman.
+                Hingga kini, Dapur Solo tidak hanya berfokus pada layanan restoran, tetapi juga melayani katering, 
+                pemesanan online, dan pengembangan brand kuliner khas Indonesia agar tetap relevan di tengah gaya hidup masyarakat urban.</p>
             <h3>Jobdesk</h3>
             <ul>
-                <li>Melakukan</li>
-                <li>Melakukan</li>
-                <li>Melakukan</li>
-                <li>Melakukan</li>
-                <li>Melakukan</li>
+                <li>Menyiapkan, Meracik, dan menyajikan berbagai minuman, baik kopi, teh, jamu, maupun minuman khas jawa yang ada di menu</li>
+                <li>Mengoperasikan mesin kopi, blender, dan peralatan minuman lain dengan benar</li>
+                <li>Menjaga konsistensi rasa, porsi, dan tampilan minuman sesuai standar Dapur Solo</li>
+                <li>Melayani pelanggan dengan ramah saat mereka memesan minuman di counter</li>
+                <li>Menjaga kebersihan area bar, peralatan, serta stok bahan baku minuman</li>
             </ul>
-            <p><strong>Periode Kerja : </strong> Juni 2025 - Sekarang </p>
+            <h3>Periode Kerja : Juni 2025 - Sekarang </h3>
         </div>
-    </div>
-
-            <div id="modalbody"></div>
         </div>
-     </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>PT Kao Indonesia</h2>
+                <h3>Deskripsi Perusahaan</h3>
+                <p class="desc">PT Kao Indonesia adalah perusahaan barang konsumen (FMCG) yang berdiri sejak 18 Januari 1985
+                    sebagai anak perusahaan Kao Corporation Jepang. Perusahaan ini memproduksi dan memasarkan produk perawatan diri, 
+                    kebersihan, serta kebutuhan rumah tangga dengan merek ternama seperti Bioré, Laurier, Attack, dan Merries. 
+                    Berbasis di Indonesia dengan pabrik di Cikarang dan Karawang, Kao Indonesia berkomitmen menghadirkan inovasi 
+                    melalui strategi “Kirei Lifestyle Innovation” untuk meningkatkan kualitas hidup konsumen sekaligus berkontribusi 
+                    pada lingkungan dan masyarakat.</p>
+                <h3>Jobdesk</h3>
+                <ul>
+                    <li>Menyiapkan material botol sesuai jadwal produksi harian.</li>
+                    <li>Melakukan starting up setting mesin Robofiller dan Robocapper.</li>
+                    <li>Melakukan setting mesin dan pengaturan nomor lot ke kemasan botol.</li>
+                    <li>Memastikan kualitas produk dengan pengecekan visual dan sampling berkala.</li>
+                    <li>Menjaga kebersihan area kerja dan alat-alat kerja sesuai prosedur GMP dan SJH.</li>
+                </ul>
+                <h3>Periode Kerja : 15 April 2024 - 15 April 2025 </h3>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>PT Eka Bogainti</h2>
+                <h3>Deskripsi Perusahaan</h3>
+                <p class="desc">PT Eka Boga Inti adalah perusahaan yang bergerak di industri restoran cepat saji, dikenal sebagai 
+                    operator merk HokBen (Hoka Hoka Bento) di Indonesia. Lokasi pusatnya berada di Jakarta (Jl. Poncol Raya). 
+                    Perusahaan ini menjalankan banyak cabang untuk layanan makan di tempat (dine-in) dan pesan-antar, 
+                    serta menawarkan kesempatan karir seperti crew restoran.</p>
+                <h3>Jobdesk</h3>
+                <ul>
+                    <li>Melakukan pelayanan ke pelanggan (menerima pesanan, menyajikan menu, melakukan pembayaran kasir).</li>
+                    <li>Menjaga kebersihan area restoran (meja, kursi, dapur dan area publik) dan peralatan memasak.</li>
+                    <li>Memahami product knowledge dan promosi yang sedang berlangsung untuk ditawarkan ke pelanggan.</li>
+                    <li>Ikut bertanggung jawab atas kelancaran operasional restoran, termasuk restocking dan pengecekan stok.</li>
+                </ul>
+                <h3>Periode Kerja : Maret 2024 - April 2024  </h3>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>PT Yamaha Music Manufacturing Asia</h2>
+                <h3>Deskripsi Perusahaan</h3>
+                <p class="desc">PT Yamaha Music Manufacturing Asia adalah perusahaan manufaktur yang bergerak di produksi 
+                    alat-alat musik elektronik dan akustik dengan merek Yamaha, seperti piano, gitar, drum, keyboard, dan instrumen lainnya. 
+                    Lokasi operasional utamanya berada di kawasan industri MM2100, Cikarang Barat, Bekasi. Perusahaan ini tidak hanya melayani 
+                    pasar domestik Indonesia, tetapi juga melakukan ekspor ke berbagai negara. YMMA menggunakan standar produksi tinggi dan 
+                    teknologi manufaktur yang cukup modern untuk menjaga kualitas produk. </p>
+                <h3>Jobdesk</h3>
+                <ul>
+                    <li>Pengecekan berkala diawal shift dan mendokumentasikan ke dalam check sheet dan daily inspection.</li>
+                    <li>Persiapan produksi sesuai model dan target yang berjalan dengan melihat daily schedule.</li>
+                    <li>Melakukan proses produksi sesuai dengan work instruction berdasarkan model yang sedang berjalan.</li>
+                    <li>Mengoperasikan mesin woodworking (6 Axis Moulder, Moulder Manual) sesuai SOP dan poin-poin K3.</li>
+                    <li>Pengecekan material setelah proses dengan visual, diraba, dan pengukuran dimensi dengan calipper.</li>
+                </ul>
+                <h3>Periode Kerja : 28 Juni 2022 - 27 Desember 2023 </h3>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>PT Indomarco Prismatama</h2>
+                <h3>Deskripsi Perusahaan</h3>
+                <p class="desc">PT Indomarco Prismatama adalah perusahaan ritel yang mengoperasikan jaringan minimarket Indomaret, salah satu yang terbesar 
+                    di Indonesia. Berdiri sejak 20 Juni 1988 dan berkantor pusat di Jakarta, perusahaan ini bergerak dalam penyediaan kebutuhan 
+                    pokok dan sehari-hari melalui toko dengan konsep praktis dan luas area kurang dari 200 m². Sebagai bagian dari Salim Group, 
+                    Indomaret telah berkembang pesat dengan ribuan gerai yang tersebar di berbagai provinsi di Indonesia, 
+                    menjadikannya pionir dalam bisnis minimarket modern di tanah air.</p>
+                <h3>Jobdesk</h3>
+                <ul>
+                    <li>Melayani pelanggan sesuai SOP seperti menyapa pelanggan dan membantu mencari produk.</li>
+                    <li>Menata dan mengelola stok (mengisi produk di rak, unloading barang dari supplier,dan cek masa kedaluarsa).</li>
+                    <li>Menjaga kebersihan area dalam dan luar toko serta kerapian toko.</li>
+                    <li>Melakukan kegiatan operasional kasir (menerima pembayaran, menghitung uang dengan akurat, penggunaan EDC/Pos Kasir, dan merekap penjualan).</li>
+                </ul>
+                <h3>Periode Kerja : Januari 2022 - April 2022 </h3>
+            </div>
+        </div>
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>PT Yamaha Indonesia Motor Manufacturing</h2>
+                <h3>Deskripsi Perusahaan</h3>
+                <p class="desc">PT Yamaha Indonesia Motor Manufacturing adalah perusahaan perakitan sepeda motor Yamaha di Indonesia, berdiri 
+                    sejak tahun 1974. Perusahaan ini memiliki fasilitas produksi utama di Jakarta Timur dan pabrik kedua di Karawang. Visi YIMM
+                     adalah menjadi perusahaan unggul yang tumbuh berkelanjutan melalui inovasi dan pengalaman berkendara yang menyenangkan, 
+                     serta berkontribusi terhadap kesejahteraan masyarakat. Selain fokus pada produksi, mereka juga sangat memperhatikan 
+                     aspek pelayanan pelanggan, distribusi spare part, dan jaringan after sales untuk menjaga kepuasan pemilik motor Yamaha.</p>
+                <h3>Jobdesk</h3>
+                <ul>
+                    <li>Persiapan material part dan packing diawal shift.</li>
+                    <li>Melakukan packing part sepeda motor berdasarkan model berjalan dan sesuai work instruction.</li>
+                    <li>Mencatat dan menginput hasil produksi ke dalam sistem packing untuk mendapatkan barcode.</li>
+                    <li>Menjaga kebersihan area kerja dan peralatan kerja.</li>
+                </ul>
+                <h3>Periode Kerja : Desember 2020 - Desember 2021 </h3>
+            </div>
+        </div>
+        <script>
 
+    // buka modal sesuai data-modal
+    document.querySelectorAll('.card').forEach(card=> {
+    card.addEventListener('click', function() {
+        const modalID = this.getAttribute('data-modal');
+        document.getElementById(modalID).style.display='block';
+        });
+    });
+    // tombol close
+    document.querySelectorAll('.close').forEach(btn => {
+    btn.addEventListener('click', function () {
+        this.closest('.modal').style.display='none';
+    });
+});
+    // klik di luar modal nutup modal
+    window.addEventListener('click', function(e){
+    document.querySelectorAll('.modal').forEach(modal => {
+    if (e.target === modal) {
+        modal.style.display='none';
+            }
+        });
+    });
+</script>
+
+    </div>
     </div>
     </section>
 
@@ -136,22 +236,4 @@
 <!--linking ke jss-->
 <script src="script.js"></script>
 </body>
-<script>
-    function openmodal(pengalaman){
-        let details = {
-            "dapursolo" : "<h2>PT Dapur Solo Mustika Nusantara</h2>",
-            "kao" : "<h2>PT Kao Indonesia</h2>",
-            "hokben" : "<h2>PT Eka Bogainti</h2>",
-            "yamahamusic" : "<h2>PT Yamaha Music Manufacturing Asia</h2>",
-            "indomaret" : "<h2>PT Indomarco Prismatama</h2>",
-            "yamahamotor" : "<h2>PT Yamaha Motor Indonesia Manufacturing</h2>"
-        };
-
-        document.getElementById("modalbody").innerHTML=details[pengalaman];
-        document.getElementById("pengalamanmodal").style.display="block";
-    }
-    function closemodal(){
-        document.getElementById("pengalamanmodal").style.display = "none";
-    }
-</script>
 </html>
