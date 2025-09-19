@@ -1,3 +1,9 @@
+<?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+include __DIR__ . '/config.php'; 
+?>
+
 <!DOCTYPE html>
 <html lang="id">
     <head>
@@ -26,6 +32,37 @@
         <h1>Hey, I'm Adithya Ilyasa</h1>
         <p> Information Systems Student | Open to Opportunity </p>
         <a href="#about" class="btn">More About Me</a>
+    </section>
+
+    <section id="notes">
+        <h2 class="background-text">My Notes</h2>
+        <form method="post">
+            <textarea id="noteContent" name="note" rows="3" cols="40" required></textarea><br>
+            <button type="submit" name="save">💾 Save</button>
+        </form>
+        <hr>
+        <?php
+        if (isset($_POST['save'])){
+            $note = $conn->real_escape_string($_POST['note']);
+            $conn->query("INSERT INTO notes (content) VALUES ('$note')");
+            header("Location: " . $_SERVER['PHP_SELF']); //refresh halaman
+            exit;
+        }
+        $result = $conn->query("SELECT * FROM notes ORDER BY created_at DESC");
+        ?>
+
+    <div class="notes-container" id="notesContainer">
+        <?php
+        while ($row = $result->fetch_assoc()){
+            ?>
+        <div class='note-item' data-id='<?=$row['id']?>'>
+        <div class='note-content'><?=nl2br(htmlspecialchars($row['content'])) ?></div>
+        <div class='note-date'><?=$row['created_at']?></div>
+        </div>
+        <?php
+        }
+        ?>
+    </div>
     </section>
 
     <section id="about" class="about fade-in">

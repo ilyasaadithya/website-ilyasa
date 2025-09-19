@@ -29,3 +29,6 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer){
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
+
+// hapus notes
+
